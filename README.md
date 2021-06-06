@@ -10,6 +10,7 @@
 ![image](https://user-images.githubusercontent.com/78882909/120936122-320cd400-c6d4-11eb-8edf-ca8f50dd5221.png)
 
 ## Deploy site
+https://swan-tech-blog.herokuapp.com/
 
 ## Installation
 
