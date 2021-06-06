@@ -1,0 +1,31 @@
+<section>
+    <h2 class="create-post">Create New Post</h2>
+
+    <form class="new-post-form">
+        <div>
+            <label class="text-size" for="post-title">Title</label>
+            <input class="back-to-dashboard" type="text" id="post-title" name="post-title" class="input-form" />
+        </div>
+        <div>
+            <label class="text-size" for="post-content" >Text</label>
+            <textarea type="text" id="post-content" name="post-content" class="back-to-dashboard"/></textarea>
+        </div>
+        <button type="submit" class="btn">Create</button>
+    </form>
+</section>
+
+{{#if posts.length}}
+<section>
+    <h2 class="back-to-dashboard">Your Posts</h2>
+    <ol>
+        {{#each posts as |post|}}
+        <li class="back-to-dashboard">
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>
