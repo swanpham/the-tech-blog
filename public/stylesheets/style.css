@@ -5,8 +5,17 @@
 }
 
 
-.background{
-  background-image: url("../images/techbloggers.jpg");
+body{
+  background-image: url("../images/shutterstock_750566476-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: fixed;
+  filter: saturate(0.5) brightness(1.25);
+  top: 0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  z-index: -999; */
   
 }
 body, html {
@@ -69,6 +78,7 @@ form > div {
 
 form label {
   display: block;
+  color: white;
   
 }
 
@@ -143,8 +153,9 @@ main {
   margin: -1.5% 0 2% 0;
 }
 
-
-
+span{
+  color: white;
+}
 
 
 .comment-form {
@@ -159,11 +170,33 @@ main {
 .comment:nth-child(odd) {
   background-color: #fff5eb;
 }
+.comment:nth-child(even) {
+  background-color: #faf6f2;
+}
 
 .comment .meta {
   font-size: 90%;
   margin-bottom: .5%;
   opacity: .6;
+}
+
+.meta{
+  color: rgb(186, 210, 235);
+  
+}
+
+.post-by{
+  color: white;
+}
+
+#post-title{
+  width: 100%;
+}
+
+#post-content{
+  width: 100%;
+  resize: vertical;
+ 
 }
 
 .create-post{
@@ -185,8 +218,7 @@ footer {
   justify-content: center;
   padding: 3%;
   font-size: 30px;
-  color: black;
- 
+  color: white;
   
 }
 .input-form{
@@ -200,9 +232,14 @@ footer {
 .back-to-dashboard{
  margin: 20px 0px 20px;
  padding-bottom: 50px;
- font-size: 25px;
- 
+ font-size: 25px; 
 }
+
+.back-to-dashboard a {
+  
+  color: #1532da;
+ }
+
 .post-form{
   padding: 20px 20px 20px;
   text-align: center;
@@ -215,7 +252,8 @@ footer {
 }
 .post-info{
   padding: 20px 80px 10px;
-  background-color: rgb(208, 223, 230);
+  background-color: rgba(208, 223, 230,0.4);
+  
   border-radius: 20px;
   font-size: 25px;
   margin-bottom: 20px ;
@@ -232,3 +270,8 @@ footer {
 .title{
   font-weight: bold;
 }
+
+h2{
+  color: white;
+}
+

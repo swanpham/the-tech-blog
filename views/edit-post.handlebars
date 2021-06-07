@@ -8,9 +8,9 @@
   <form class="edit-post-form">
     <div class="post-display" >
       <input class="back-to-dashboard" name="post-title" type="text" value="{{post.title}}"  />
-      <textarea  class="back-to-dashboard" type="text" id="post-content" name="post-content" value="{{post.post_content}}"/></textarea>
+      <textarea  class="back-to-dashboard" type="text" id="post-content" name="post-content" />{{post.post_content}}</textarea>
     </div>
-    <div class="back-to-dashboard">
+    <div class="back-to-dashboard meta">
       by you on {{format_date post.created_at}}
       
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
